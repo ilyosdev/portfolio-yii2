@@ -39,6 +39,13 @@
     <meta property="og:site_name" content="Ilyos Olimov" />
     <meta property="article:section" content="Blog" />
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
@@ -67,16 +74,16 @@
             </a>
         </li>
         <li>
-            <a class="me aroute" href="<?=Url::base()?>#about">
+            <a class="me aroute" href="<?=Url::base()?>/about">
                 <span>ABOUT</span></a>
 
         </li>
         <li>
-            <a class="me aroute" href="<?=Url::base()?>#blog">
+            <a class="me aroute" href="<?=Url::base()?>/blog">
                 <span>BLOG</span></a>
         </li>
         <li>
-            <a class="me aroute" href="<?=Url::base()?>#works">
+            <a class="me aroute" href="<?=Url::base()?>/works">
                 <span>WORK</span></a>
         </li>
     </ul>
@@ -88,6 +95,8 @@
 
 
 <?php $this->endBody() ?>
+
+<!--<script type="text/javascript" src=""></script>-->
 </body>
 </html>
 <?php $this->endPage() ?>

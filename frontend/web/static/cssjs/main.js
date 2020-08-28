@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function () {
     $('#options').on('mousewheel', function (e) {
         if (e.originalEvent.wheelDelta / 120 > 0) {
@@ -157,6 +154,7 @@ $("figure").click(function () {
         $(".link").removeClass("off");
     }
 });
+
 $("figure a ").click(function (e) {
     e.stopPropagation();
 });
