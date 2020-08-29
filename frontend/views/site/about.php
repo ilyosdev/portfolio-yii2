@@ -72,27 +72,6 @@
 
 
         <?
-
-            if ($skills): ?>
-        <div class="row skills">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <div class="pfblock-header wow fadeInUp">
-                            <h2 class="pfblock-title">My Skills</h2>
-                            <div class="pfblock-line"></div>
-                        </div>
-                    </div>
-                </div><!-- .row -->
-                <? foreach ($skills as $skill): ?>
-                    <div class="col-xs-6 col-md-<?= (integer)(12 / $count) ?> col-md-offset-  text-center" style="margin-left: <?= 12 % $count ?>%">
-						<span data-percent="55" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
-                            <span class="percent"><?= $skill['skill_percent']; ?></span>
-                        </span>
-                        <h5 class="text-center"><?= $skill['skill_name'] ?></h5>
-                    </div>
-                <? endforeach; ?>
-                <? endif; ?>
                 <? if (!$skills): ?>
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3">
