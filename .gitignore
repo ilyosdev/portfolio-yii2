@@ -45,4 +45,3 @@ phpunit.phar
 #/frontend/web/images/
 #/frontend/web/thumbs/
 #/common/config/main-local.php
-/console/
