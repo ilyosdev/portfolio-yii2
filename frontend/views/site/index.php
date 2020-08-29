@@ -2,6 +2,8 @@
 
     /* @var $this yii\web\View */
 
+    use yii\helpers\Url;
+
     $this->title = 'Portfolio || Ilyos Olimov';
 ?>
 
@@ -14,7 +16,7 @@
     <div class="intro-name">
         Ilyos Olimov
     </div>
-    <a href="./about.html" class="button">About Me
+    <a href="<?=Url::base()?>/about" class="button">About Me
         <div class="mask"></div>
     </a>
 </div>
